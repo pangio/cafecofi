@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h2>Registra tu Cafe</h2>
+    {#  {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %}#}
+    <form action="{{ url_for('add_coffee_shop') }}" method=POST>
+        {{ form.hidden_tag() }}
+
+        <p>
+            {{ form.name.label }}:
+        </p>
+        <p>
+            {{ form.name }}
+        </p>
+        {% for error in form.name.errors %}
+            <span style="color: red;">{{ error }}</span>
+        {% endfor %}<br>
+        <p>
+            {{ form.manager_name.label }}:
+        </p>
+        <p>
+            {{ form.manager_name }}
+        </p>
+        {% for error in form.manager_name.errors %}
+            <span style="color: red;">{{ error }}</span>
+        {% endfor %}<br>
+        <p>
+            {{ form.email.label }}:
+        </p>
+        <p>
+            {{ form.email }}
+        </p>
+        {% for error in form.email.errors %}
+            <span style="color: red;">{{ error }}</span>
+        {% endfor %}<br>
+
+        <p><input type=submit value=Registrarme></p>
+    </form>
+{% endblock %}
+
+

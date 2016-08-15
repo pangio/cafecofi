@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <h2>Compra tu kit de cafes y ahorra!</h2> <br>
+
+    1) Selecciona tu comuna <br>
+    2) Encontra el kit de cafes que mas te guste! <br>
+    3) Ahorra pesos y tiempo :) <br>
+
+    <p><a href="{{ url_for("add_kit", id=1) }}">Quiero comprar mi kit</a></p>
+
+{% endblock %}
