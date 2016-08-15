@@ -1,10 +1,20 @@
-Steps to run app:
+SETUP:
 
-Inside vagrant:
+Requirements:
++ Vagrant 1.7.4
++ VirtualBox 5.0.0
+
+In the main directory:
+    vagrant up
+    vagrant provision
+
+Connect to vagrant:
+    vagrant ssh
 
 Install dependencies:
+    cd /vagrant
 
-    sudo pip install -r requirements.txt
+    Run: sudo pip install -r requirements.txt
 
 Init db:
 
@@ -16,5 +26,15 @@ Run app:
 
 
 Postgres:
-\connect dbname
-\dt show tables
+Connect to db: \connect dbname
+Show tables: \dt
+
+
+
+-------
+
+Included in validation:
+- Coffee Shop Manager form
+- Clients form
+- WEB (landing page)
+- CMS coffee shops and clients
