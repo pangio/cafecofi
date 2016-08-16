@@ -10,9 +10,9 @@
 3 connect: `vagrant ssh`
 
 # Install dependencies
-```cd /vagrant 
+`cd /vagrant`
 
-sudo pip install -r requirements.txt```
+`sudo pip install -r requirements.txt`
 
 # Run app
     `python manage.py runserver --host 0.0.0.0 --port 5000 (vagrant corre con 0.0.0.0 como localhost)`
