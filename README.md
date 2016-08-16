@@ -15,7 +15,7 @@
 `sudo pip install -r requirements.txt`
 
 # Run app
-`python manage.py runserver --host 0.0.0.0 --port 5000 (vagrant corre con 0.0.0.0 como localhost)`
+`python manage.py runserver --host 0.0.0.0 --port 5000`
 
 # Postgres
 Init DB: `python manage.py setup_nomad`
