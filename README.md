@@ -4,7 +4,9 @@
 
 # Vagrant
 1 run: `vagrant up`
+
 2 setup: `vagrant provision`
+
 3 connect: `vagrant ssh`
 
 # Install dependencies
