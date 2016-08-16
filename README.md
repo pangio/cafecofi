@@ -11,6 +11,7 @@
 
 # Install dependencies
 ```cd /vagrant 
+
 sudo pip install -r requirements.txt```
 
 # Run app
@@ -18,7 +19,9 @@ sudo pip install -r requirements.txt```
 
 # Postgres
 Init DB: `python manage.py setup_nomad`
+
 Connect to db: `\connect dbname`
+
 Show tables: `\dt`
 
 
