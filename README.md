@@ -1,33 +1,28 @@
-SETUP:
-
-Requirements:
+# Requirements
 + Vagrant 1.7.4
 + VirtualBox 5.0.0
 
-In the main directory:
-    vagrant up
-    vagrant provision
+# Vagrant
+1 run: `vagrant up`
 
-Connect to vagrant:
-    vagrant ssh
+2 setup: `vagrant provision`
 
-Install dependencies:
-    cd /vagrant
+3 connect: `vagrant ssh`
 
-    Run: sudo pip install -r requirements.txt
+# Install dependencies
+`cd /vagrant`
 
-Init db:
+`sudo pip install -r requirements.txt`
 
-    python manage.py setup_nomad
+# Run app
+`python manage.py runserver --host 0.0.0.0 --port 5000`
 
-Run app:
+# Postgres
+Init DB: `python manage.py setup_nomad`
 
-    python manage.py runserver --host 0.0.0.0 --port 5000 (vagrant corre con 0.0.0.0 como localhost)
+Connect to db: `\connect dbname`
 
-
-Postgres:
-Connect to db: \connect dbname
-Show tables: \dt
+Show tables: `\dt`
 
 
 
