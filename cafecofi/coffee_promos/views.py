@@ -1,8 +1,8 @@
 from datetime import datetime
 from flask import flash
 from cafecofi import db
-from cafecofi.coffee_promo.forms import CoffeePromoForm
-from cafecofi.coffee_promo.models import CoffeePromo
+from cafecofi.coffee_promos.forms import CoffeePromoForm
+from cafecofi.coffee_promos.models import CoffeePromo
 from flask import flash, render_template, redirect, url_for
 
 from cafecofi import db, app

@@ -1,7 +1,7 @@
 from flask import flash, render_template, redirect, url_for
 
 from cafecofi import db, app
-from cafecofi.coffee_shop.forms import CoffeeShopRegistrationForm
+from cafecofi.coffee_shops.forms import CoffeeShopRegistrationForm
 from cafecofi.common import messages
 from .models import CoffeeShop
 

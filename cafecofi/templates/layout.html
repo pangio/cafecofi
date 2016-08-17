@@ -2,19 +2,20 @@
 <title></title>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
-  <h1>Bienvenidos a 123 Cafe!</h1>
-  <div class=metanav>
-  </div>
+    <h1>Bienvenidos a CafeCofi</h1>
+    <h2>Nunca ahorraste tanto comprando tu cafe</h2>
+    <div class=metanav>
+    </div>
 
     {% with messages = get_flashed_messages() %}
-      {% if messages %}
+        {% if messages %}
 
-        {% for message in messages %}
-            {{ message }} <br>
-        {% endfor %}
+            {% for message in messages %}
+                {{ message }} <br>
+            {% endfor %}
 
-      {% endif %}
+        {% endif %}
     {% endwith %}
 
-  {% block body %}{% endblock %}
+    {% block body %}{% endblock %}
 </div>
